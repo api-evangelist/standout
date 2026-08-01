@@ -1,0 +1,19 @@
+generated: '2026-07-21'
+method: searched
+source: https://registry.npmjs.org/standout
+packages:
+- language: javascript
+  registry: npm
+  name: standout
+  version: 0.6.1
+  url: https://www.npmjs.com/package/standout
+  install: npx standout
+  description: Build your developer profile with AI. One command, zero friction.
+  license: MIT
+  bin: standout
+  repository: https://github.com/Standout-Work/standout
+  official: true
+  note: >-
+    First-party CLI (the Standout product itself), published by alexis@standout.work with homepage
+    standout.work. It is the product command, not a client SDK for a public Standout API — Standout
+    exposes no public REST/GraphQL API. Bundles @modelcontextprotocol/sdk and @anthropic-ai/sdk.

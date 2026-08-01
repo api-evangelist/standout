@@ -1,0 +1,22 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.npmjs.com/package/standout
+name: standout
+description: >-
+  First-party command-line tool that builds an AI-assessed developer profile. The published surface
+  is a single zero-config entrypoint ("One command, zero friction") — the docs and package do not
+  publish a broader subcommand/flag reference, so only the documented entrypoint is captured here.
+binary: standout
+requires:
+  node: '>=18'
+install:
+- method: npx
+  command: npx standout
+- method: npm-global
+  command: npm install -g standout
+commands:
+- command: standout
+  description: >-
+    Run the interactive assessment; evaluates how you think, build, and debug in your terminal to
+    create a living capability profile used for match-based, founder-direct introductions.
+official: true

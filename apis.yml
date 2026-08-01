@@ -1,7 +1,23 @@
 aid: standout
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/standout.png
 name: Standout
-description: Standout is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Standout (standout.work) is an AI talent agent for tech professionals in the United
+  States. Candidates run a CLI (`npx standout`) that assesses how they think, build, and debug to
+  create a living, verified profile of capability rather than a resume. Standout matches candidates
+  to hiring companies and brokers a direct introduction to the founder when a match looks right — no
+  applications and no recruiter middle layer. It is free for candidates; companies pay only on a
+  successful hire. Backed by Y Combinator.
 url: https://raw.githubusercontent.com/api-evangelist/standout/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +27,42 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Hiring
+- Recruiting
+- Talent
+- Jobs
+- AI Agents
+- Developer Tools
 apis: []
+common:
+- type: DomainSecurity
+  url: security/standout-domain-security.yml
+- type: Website
+  url: https://standout.work
+- type: Blog
+  url: https://standout.work/blog
+- type: PrivacyPolicy
+  url: https://standout.work/privacy-policy
+- type: TermsOfService
+  url: https://standout.work/terms
+- type: LLMsTxt
+  url: llms/standout-llms.txt
+- type: GitHubOrganization
+  url: https://github.com/Standout-Work
+- type: Packages
+  url: packages/standout-packages.yml
+- type: CLI
+  url: cli/standout-cli.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
